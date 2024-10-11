@@ -37,7 +37,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/suggested-users', [HomeController::class, 'suggestedUsers'])
         ->name('suggested-users');
 
-
     Route::get('/post/create', [PostController::class, 'create'])
         ->name('post.create');
 

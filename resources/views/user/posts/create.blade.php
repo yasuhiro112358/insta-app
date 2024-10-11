@@ -43,7 +43,6 @@
             <p class="mb-0 text-danger small">{{ $message }}</p>
         @enderror
 
-
         <button type="submit" class="btn btn-primary px-4 mt-4">Post</button>
     </form>
 @endsection

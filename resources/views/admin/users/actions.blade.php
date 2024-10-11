@@ -53,7 +53,7 @@
                     </p>
                 </div>
                 <div class="modal-footer border-0">
-                    <form action="{{route('admin.users.activate', $user->id)}}" method="post">
+                    <form action="{{ route('admin.users.activate', $user->id) }}" method="post">
                         @csrf
                         @method('PATCH')
                         <button type="button" data-bs-dismiss="modal"

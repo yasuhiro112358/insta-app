@@ -24,6 +24,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
 </head>
 
 <body>
@@ -44,8 +45,9 @@
                     <ul class="navbar-nav ms-auto">
                         @auth
                             @if (!request()->is('admin/*'))
-                                <form action="{{route('home')}}" method="get">
-                                    <input type="text" name="search" placeholder="search..." id="" class="form-control form-control-sm">
+                                <form action="{{ route('home') }}" method="get">
+                                    <input type="text" name="search" placeholder="search..." id=""
+                                        class="form-control form-control-sm">
                                 </form>
                             @endif
                         @endauth

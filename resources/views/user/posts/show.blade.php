@@ -15,7 +15,11 @@
     </style>
     <div class="row border shadow">
         <div class="col-8 p-0 border-end">
-            <img src="{{ $post->image }}" alt="" class="w-100">
+            <img
+                src="{{ $post->image }}"
+                alt=""
+                class="w-100"
+            >
         </div>
 
         <div class="col-4 px-0 bg-white">
